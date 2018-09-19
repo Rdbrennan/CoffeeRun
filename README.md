@@ -1,5 +1,5 @@
 # Weclome to CoffeeRun ☕️
-Goal: To learn core browser programming with flexbox, media queries, javascript events and visual effects with CSS. 
+Goal: To learn data manipulation techniques using javascript modules, objects, and forms 
 
 
 # Projects

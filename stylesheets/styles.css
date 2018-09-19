@@ -1,0 +1,44 @@
+body{
+  background: url(../img/coffeerun2.jpg) no-repeat center center fixed;
+background-size: cover;
+}
+
+head{
+
+}
+h1{
+  font-family: cursive;
+  position: relative;
+  color: #8d5125;
+}
+
+.tall{
+  color: green;
+}
+.grande{
+  color: blue;
+}
+.venti{
+  color: yellow;
+}
+.buzz{
+  color: red;
+}
+
+.panel-body{
+  max-width: 650px;
+  min-width: 700px;
+  background-color: #f9c98b;
+  border-radius: 5px;
+}
+.panel-default{
+  border-color: #8d5225;
+  border-radius: 6px;
+}
+
+section{
+  max-width: 655px;
+  min-width: 702px;
+  color: #8d5125;
+
+}

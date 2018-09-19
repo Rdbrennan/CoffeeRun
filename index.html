@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Coffee Run</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootst
+rap/3.3.6/css/bootstrap.min.css">
+    <style>
+          form :focus:required:invalid {
+            border-color: red;
+          }
+    </style>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+  </head>
+  <body class="container">
+    <header>
+      <h1>CoffeeRun</h1>
+    </header>
+    <section>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <form data-coffee-order="form">
+            <div class="row">
+              <div class="form-group">
+                <div class="col-xs-5">
+                <label for="coffeeOrder">Coffee Order</label>
+                <input class="form-control" name="coffee" id="coffeeOrder" placeholder="Pumpkin Spice Latte"
+                 autofocus required pattern="[a-zA-Z\s]+"/>
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <div class="form-group">
+                <div class="col-xs-5">
+                <label for="emailInput">Email</label>
+                <input class="form-control" type="email" name="emailAddress"
+                  id="emailInput" value="" placeholder="dr@who.com" required />
+                </div>
+              </div>
+            </div>
+            <div class="">
+              <label for="emailInput">Coffee Size</label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="size" value="tall" checked>
+                Tall
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="size" value="grande">
+                Grande
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="size" value="venti">
+                Venti
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="size" value="buzz">
+                Buzztown Showdown
+              </label>
+            </div>
+            <div class="row">
+              <div class="form-group">
+                <div class="col-xs-5">
+                <label for="flavorShot">Flavor Shot</label>
+                  <select id="flavorShot" class="form-control" name="flavor">
+                    <option value="">None</option>
+                    <option value="caramel">Caramel</option>
+                    <option value="almond">Almond</option>
+                    <option value="mocha">Mocha</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group">
+                <div class="col-xs-5">
+                  <label for="strengthLevel">Caffeine Rating: </label>
+                  <input name="strength" id="range" type="range" value="30">
+                  <p><b>Intensity: </b><span value="30" id="value"></span></p>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+            <button type="reset" class="btn btn-default">Reset</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <h4>Pending Orders:</h4>
+          <div id="pend" data-coffee-order="checklist">
+          </div>
+        </div>
+      </div>
+</section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"
+      charset="utf-8"></script>
+    <script src="scripts/validation.js" charset="utf-8"></script>
+    <script src="scripts/checklist.js" charset="utf-8"></script>
+    <script src="scripts/formhandler.js" charset="utf-8"></script>
+    <script src="scripts/remotedatastore.js" charset="utf-8"></script>
+    <script src="scripts/datastore.js" charset="utf-8"></script>
+    <script src="scripts/truck.js" charset="utf-8"></script>
+    <script src="scripts/main.js" charset="utf-8"></script>
+  </body>
+</html>

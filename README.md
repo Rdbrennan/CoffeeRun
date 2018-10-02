@@ -50,8 +50,5 @@ Things I learned:
   ● Sending/Receiving data and Accepting/Calling a callback
   
   ● Form checklist module
-  
-  ● Sending/Receiving data and Accepting/Calling a callback
-
 
  
